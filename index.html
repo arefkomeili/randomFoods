@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="card-container">
+        <div class="card">
+            <img id="recipe-image" alt="Recipe Image">
+        <div>
+            <div class="card-content">
+                <h2 id="recipe-name">Recipe Name</h2>
+                <p id="cuisine" class="meta">Cuisine</p>
+                <p id="author" class="meta">by User</p>
+                <div class="info">
+                    <span id="prep-time">Prep Time: XX min</span>
+                    <span id="rating">Rating: XX</span>
+                </div>
+                <h3>How to prepare</h3>
+                <ol id="instructions"></ol>
+                <h3>Ingredients</h3>
+                <ul id="ingredients"></ul>
+            </div>
+            <button id="random-recipe-btn">Get Random Recipe</button>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

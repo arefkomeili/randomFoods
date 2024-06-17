@@ -1,0 +1,87 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card-container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+}
+
+.card {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+img#recipe-image {
+    width: 50% !important; /* Fixed width for image */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+    border-radius: 10px 0 0 10px; /* Rounded corners */
+    overflow: hidden;
+}
+
+.card-content {
+    padding: 20px;
+    max-width: 400px;
+    max-height: 500px;
+
+    flex: 1;
+    text-align: left;
+    overflow: auto;
+}
+
+h2, .meta, .info, h3 {
+    margin: 10px 0; /* Standard margin for headings and metadata */
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.info span {
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+ul, ol {
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+ul li, ol li {
+    margin-bottom: 5px;
+    color: #555;
+}
+
+button {
+    width: 100%; /* Button takes up full width of its container */
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 15px 0;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    /* border-radius: 0 0 0px 10px; Rounded corners on button */
+}
+
+button:hover {
+    background-color: #e55b4e;
+}
+
+button:focus {
+    outline: none;
+}
